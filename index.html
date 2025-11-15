@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sudhanshu Chaudhary — Portfolio</title>
+  <meta name="description" content="Sudhanshu Chaudhary | Data Analyst & Student | Python ·C · SQL · ML · Tableau ">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Top nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" tabindex="0" aria-label="Sudhanshu Chaudhary — Home">
+        <div class="logo-blob" aria-hidden="true"></div>
+        <div class="brand-text">
+          <span class="name">Sudhanshu Chaudhary</span>
+          <span class="role">Data Analyst • B.Tech CSE (Shri Ramswaroop Memorial College of Engineering and Management Lucknow, Uttar Pradesh 226028)</span>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn-ghost" aria-pressed="false" title="Toggle theme">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="main">
+    <section class="hero container">
+      <div class="hero-left">
+        <div class="profile">
+          <!-- Use assets/profile.jpg if you put your image there -->
+          <img src="C:\Users\ersat\Downloads\profile pic .jpg" id="profileImg"
+               onerror="this.style.display='none';document.getElementById('svgAvatar').style.display='block'">
+          <!-- SVG fallback avatar -->
+          <div id="svgAvatar" class="svg-avatar" style="display:none" aria-hidden="true">
+            <svg viewBox="0 0 120 120" width="200" height="200" role="img" aria-label="Avatar">
+              <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f7797d"/><stop offset="1" stop-color="#65e6f3"/></linearGradient></defs>
+              <rect rx="24" width="120" height="120" fill="url(#g)"/>
+              <g transform="translate(18,22)" fill="#fff">
+                <circle cx="24" cy="20" r="14"/>
+                <path d="M0,86c0-18 48-18 48,0v6H0z"/>
+              </g>
+            </svg>
+          </div>
+          <div class="profile-meta">
+            <h1>Hi — I'm <span class="accent">Sudhanshu</span></h1>
+            <p class="sub">Aspiring Data Analyst • Python · SQL · Tableau · ML</p>
+            <p class="location">📍 Lucknow — 226028</p>
+            <div class="cta-row">
+              <a class="btn primary" href="https://drive.google.com/file/d/1KlGiKQ_LVW1FInbTlxk1nSAS4G6u_BLG/view?usp=drivesdk" download>Download Resume</a>
+              <a class="btn outline" href="#projects">See Projects</a>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/sudhanshu1404" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/in/sudhanshu-chaudhary-81205a225/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="false">
+        <div class="typewriter-wrap" aria-hidden="true">
+          <h2 class="typewriter">I build insights from data — <span id="typewriter-text"></span></h2>
+        </div>
+
+        <div class="quick-info">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:sudhanshu1404@gmail.com">sudhanshu1404@gmail.com</a> · Phone: <a href="tel:+918874740110">+91-8874740110</a></p>
+
+          <h3>Skills</h3>
+          <div class="chips">
+            <span>Python</span><span>SQL</span><span>Tableau</span><span>Data Viz</span><span>Machine Learning</span><span>HTML/CSS</span><span>Git</span>
+          </div>
+
+          <h3>Certificates</h3>
+          <ul class="muted-list">
+            <li>Python for Data Science — IBM <a class="link-inline" href="https://www.credly.com/badges/d53c063d-4468-4873-8440-7e772609f1c4/linked_in_profile" target="_blank">View</a></li>
+            <li>HTML & CSS — IBM <a class="link-inline" href="https://example.com/html-css-certificate" target="_blank">View</a></li>
+            <li>SQL — HackerRank <a class="link-inline" href="https://www.hackerrank.com/certificates/6e2543091292" target="_blank">View</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (replace existing project cards with these) -->
+<section id="projects" class="section container">
+  <h2 class="section-title">💼 Projects</h2>
+  <div class="grid">
+    <!-- 1. VLC Gesture -->
+    <article class="card project"
+             data-title="VLC Media Player — Hand Gesture Control"
+             data-desc="Real-time hand-gesture controller for VLC using MediaPipe + OpenCV + PyAutoGUI. Maps finger counts to play/pause, volume, forward/back."
+             data-link="https://github.com/sudhanshu1404/VLC-Media-Player-Controlling-By-Hand-Gesture-">
+      <img src="assets/thumb-vlc.png" alt="VLC Gesture thumbnail" class="card-thumb" onerror="this.style.display='none'">
+      <h4>VLC Media Player — Hand Gesture Control</h4>
+      <p>MediaPipe + OpenCV script that controls VLC via keyboard events (play/pause, volume, seek).</p>
+      <div class="card-meta">
+        <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">MediaPipe</span>
+        <a class="repo-link" href="https://github.com/sudhanshu1404/VLC-Media-Player-Controlling-By-Hand-Gesture-" target="_blank" rel="noopener noreferrer" aria-label="Open repo">GitHub ↗</a>
+      </div>
+      <button class="btn-sm open-project" type="button">View</button>
+    </article>
+
+    <!-- 2. Library Management -->
+    <article class="card project"
+             data-title="Library Management System (Flask + SQLite)"
+             data-desc="Flask app with auth, admin/user panels, book management, borrow/return tracking and reports. Uses SQLAlchemy + Flask-Login."
+             data-link="https://github.com/sudhanshu1404/library_management_system">
+      <img src="assets/thumb-library.png" alt="Library System thumbnail" class="card-thumb" onerror="this.style.display='none'">
+      <h4>Library Management System</h4>
+      <p>Admin & user dashboards, borrow/return flows, reporting — built with Flask & SQLite.</p>
+      <div class="card-meta">
+        <span class="chip">Flask</span><span class="chip">SQLite</span><span class="chip">SQLAlchemy</span>
+        <a class="repo-link" href="https://github.com/sudhanshu1404/library_management_system" target="_blank" rel="noopener noreferrer" aria-label="Open repo">GitHub ↗</a>
+      </div>
+      <button class="btn-sm open-project" type="button">View</button>
+    </article>
+
+    <!-- 3. Fraud Detection -->
+    <article class="card project"
+             data-title="Fraud Detection in Supply Chain (Blockchain + AI)"
+             data-desc="Final year hybrid project: blockchain for tamper-proof logs + ML models to detect anomalous/fraudulent events in supply chains."
+             data-link="https://github.com/sudhanshu1404/Fraud-Detection-In-Supply-Chain-Blockchain-AI">
+      <img src="assets/thumb-fraud.png" alt="Fraud Detection thumbnail" class="card-thumb" onerror="this.style.display='none'">
+      <h4>Fraud Detection (Blockchain + AI)</h4>
+      <p>Hybrid prototype combining blockchain logging and ML-based fraud detection for supply chains.</p>
+      <div class="card-meta">
+        <span class="chip">Python</span><span class="chip">Blockchain</span><span class="chip">Machine Learning</span>
+        <a class="repo-link" href="https://github.com/sudhanshu1404/Fraud-Detection-In-Supply-Chain-Blockchain-AI" target="_blank" rel="noopener noreferrer" aria-label="Open repo">GitHub ↗</a>
+      </div>
+      <button class="btn-sm open-project" type="button">View</button>
+    </article>
+  </div>
+</section>
+
+
+    <!-- Education -->
+    <section id="education" class="section container">
+      <h2 class="section-title">📚 Education</h2>
+      <ul class="timeline">
+        <li><strong>B.Tech — CSE</strong>, SRMCEM Lucknow (2026). Major project: Fraud Detection. GPA: 8.3</li>
+        <li><strong>Diploma — CSE</strong>, MMIT Bansi, Siddharthnagar (2022) — 80.2%</li>
+        <li><strong>12th U.P BOARD </strong>, SSIC Tetari Bazar Siddharthnagar (2019) — 76%</li>
+        <li><strong>10th U.P BOARD</strong>, JKIC Sanai Siddharthnagar (2017) — 83%</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">📞 Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Get in touch</h4>
+          <p>Email: <a href="mailto:sudhanshu1404@gmail.com">sudhanshu1404@gmail.com</a></p>
+          <p>Phone: <a href="tel:+918874740110">+91-8874740110</a></p>
+          <p>Address: Lucknow, Uttar Pradesh — 226028</p>
+          <p><a class="btn outline" href="https://www.google.com/maps?q=Lucknow+226028" target="_blank">View on map</a></p>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/movlvooe" method="POST">
+          <label>
+            <span>Name</span>
+            <input name="name" required placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" required placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required placeholder="Hi Sudhanshu — I would like to..."></textarea>
+          </label>
+          <div class="form-row">
+            <button type="submit" class="btn primary">Send</button>
+            <button type="reset" class="btn-ghost">Reset</button>
+          </div>
+          <p class="muted small"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>✨ © 2025 Sudhanshu Chaudhary — Made with ❤️</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-inner" role="document">
+      <button id="closeModal" class="modal-close" aria-label="Close project">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><a id="modalLink" class="btn outline" target="_blank" rel="noopener">Open Project</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
